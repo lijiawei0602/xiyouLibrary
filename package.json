@@ -1,0 +1,20 @@
+{
+  "name": "xiyoulibrary",
+  "version": "1.0.0",
+  "description": "Api for xiyouLibrary by nodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "set NODE_ENV=production && node ./server/app.js",
+    "dev": "set NODE_ENV=development && node ./server/app.js"
+  },
+  "author": "Li Jiawei",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "iconv-lite": "^0.4.19",
+    "request": "^2.83.0"
+  }
+}
