@@ -7,6 +7,7 @@ var info = require("../model/user/info.js");
 var rent = require("../model/user/rent.js");
 var renew = require("../model/user/renew.js");
 var modifyPassword = require("../model/user/modPassword.js");
+var history = require("../model/user/history");
 
 router.use("/login", function(req,res){
     var username = req.query.username;
@@ -51,6 +52,13 @@ router.use("/modifyPassword", function(req,res){
         str_reader_barcode: req.query.username
     };
     modifyPassword(session, info, function(err, result){
+        parse(err, res, result);
+    });
+});
+
+router.use("/history", function(req,res){
+    var session = req.query.session;
+    history(session, function(err, result){
         parse(err, res, result);
     });
 })

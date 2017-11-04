@@ -15,6 +15,8 @@
     "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.2",
     "iconv-lite": "^0.4.19",
-    "request": "^2.83.0"
+    "mongoose": "^4.13.0",
+    "request": "^2.83.0",
+    "urlencode": "^1.1.0"
   }
 }
